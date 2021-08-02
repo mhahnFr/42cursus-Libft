@@ -6,12 +6,14 @@
 #    By: mhahn <mhahn@student.42heilbronn.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/16 09:57:08 by mhahn             #+#    #+#              #
-#    Updated: 2021/06/26 17:25:55 by mhahn            ###   ########.fr        #
+#    Updated: 2021/08/02 22:04:36 by mhahn            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+# The name of the binary to create.
 NAME = libft.a
 
+# The source files.
 SRC = ft_atoi.c \
 ft_bzero.c \
 ft_isalnum.c \
@@ -47,6 +49,7 @@ ft_strjoin.c \
 ft_strmapi.c \
 ft_split.c
 
+# The source files for the bonus part.
 BONBON = ft_lstnew.c \
 ft_lstadd_front.c \
 ft_lstsize.c \
@@ -58,25 +61,32 @@ ft_lstiter.c \
 ft_lstmap.c
 
 
+# Compiles the library including the bonus part.
 all: $(NAME) bonus
 
+# Compiles the mandatory part of the library.
 $(NAME):
 	cc -Wall -Werror -Wextra -c $(SRC)
 	ar -rs $(NAME) *.o
 
+# Removes all temporary files.
 clean:
 	/bin/rm -f *.o
 	/bin/rm -f *~
 
+# Removes all files created by this makefile.
 fclean: clean
 	/bin/rm -f $(NAME)
 
+# Removes all files and recompiles the library.
 re: fclean all
 
+# Creates a dynamic library.
 so:
 	$(CC) -fPIC $(CFLAGS) $(SRC)
 	gcc -shared -o libft.so $(OBJ)
 
+# Compiles and adds the bonus part to the library.
 bonus:
 	cc -Wall -Werror -Wextra -c $(BONBON)
 	ar -rs $(NAME) *.o
