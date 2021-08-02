@@ -6,7 +6,7 @@
 /*   By: mhahn <mhahn@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 13:19:28 by mhahn             #+#    #+#             */
-/*   Updated: 2021/08/02 21:43:49 by mhahn            ###   ########.fr       */
+/*   Updated: 2021/08/02 23:13:22 by mhahn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -262,7 +262,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
  */
 t_list	*ft_lstnew(void *content);
 
-
 /* Injects the given node at the beginning of the given list. */
 void	ft_lstadd_front(t_list **lst, t_list *new);
 
@@ -306,7 +305,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 
 /*
  * Creates a new linked list. The content of each new node is the original
- * content derived by the given function. If the allocation fails, the new 
+ * content derived by the given function. If the allocation fails, the new
  * linked list is deleted using the given delete function. Otherwise, the
  * pointer to the beginning of a new linked list is returned.
  */
