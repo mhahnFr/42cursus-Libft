@@ -6,7 +6,7 @@
 /*   By: mhahn <mhahn@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/16 15:53:12 by mhahn             #+#    #+#             */
-/*   Updated: 2021/06/22 13:05:44 by mhahn            ###   ########.fr       */
+/*   Updated: 2021/08/11 17:54:55 by mhahn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_isalpha(int c)
 {
-	if ((((unsigned char) c >= 65 && (unsigned char) c <= 90)
-			|| ((unsigned char) c >= 97 && (unsigned char) c <= 122))
+	if ((((unsigned char) c >= 'A' && (unsigned char) c <= 'Z')
+			|| ((unsigned char) c >= 'a' && (unsigned char) c <= 'z'))
 		&& c < 128)
 	{
 		return (1);

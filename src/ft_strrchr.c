@@ -6,7 +6,7 @@
 /*   By: mhahn <mhahn@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/18 11:43:28 by mhahn             #+#    #+#             */
-/*   Updated: 2021/06/18 11:49:43 by mhahn            ###   ########.fr       */
+/*   Updated: 2021/08/11 17:37:21 by mhahn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@ char	*ft_strrchr(const char *s, int c)
 	while (counter >= 0)
 	{
 		if (s[counter] == (char) c)
-		{
 			return ((char *) &s[counter]);
-		}
 		counter--;
 	}
 	return (NULL);

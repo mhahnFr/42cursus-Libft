@@ -6,7 +6,7 @@
 /*   By: mhahn <mhahn@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/16 15:34:53 by mhahn             #+#    #+#             */
-/*   Updated: 2021/06/22 13:10:57 by mhahn            ###   ########.fr       */
+/*   Updated: 2021/08/11 17:57:32 by mhahn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 int	ft_tolower(int c)
 {
-	if ((unsigned char) c >= 65 && (unsigned char) c <= 90 && c < 128)
-	{
+	if ((unsigned char) c >= 'A' && (unsigned char) c <= 'Z' && c < 128)
 		return ((unsigned char) c + 32);
-	}
 	return (c);
 }

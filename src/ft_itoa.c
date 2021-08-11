@@ -6,7 +6,7 @@
 /*   By: mhahn <mhahn@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 16:09:47 by mhahn             #+#    #+#             */
-/*   Updated: 2021/08/02 21:44:54 by mhahn            ###   ########.fr       */
+/*   Updated: 2021/08/11 17:34:12 by mhahn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,6 @@ char	*ft_itoa(int n)
 		counter += 1;
 	str = malloc(counter);
 	if (str != NULL)
-	{
 		convert(&ln, str, &counter, &dc);
-	}
 	return (str);
 }

@@ -6,7 +6,7 @@
 /*   By: mhahn <mhahn@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/15 19:49:47 by mhahn             #+#    #+#             */
-/*   Updated: 2021/06/22 13:09:29 by mhahn            ###   ########.fr       */
+/*   Updated: 2021/08/11 17:55:21 by mhahn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 int	ft_isdigit(int c)
 {
 	if ((unsigned char) c >= '0' && (unsigned char) c <= '9' && c < 128)
-	{
 		return (1);
-	}
 	return (0);
 }
