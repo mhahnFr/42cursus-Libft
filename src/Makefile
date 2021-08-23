@@ -6,7 +6,7 @@
 #    By: mhahn <mhahn@student.42heilbronn.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/16 09:57:08 by mhahn             #+#    #+#              #
-#    Updated: 2021/08/11 19:37:12 by mhahn            ###   ########.fr        #
+#    Updated: 2021/08/23 13:47:03 by mhahn            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -100,5 +100,5 @@ so:
 	gcc -shared -o libft.so $(OBJ)
 
 # Compiles and adds the bonus part to the library.
-bonus: $(OBJB)
+bonus: $(NAME) $(OBJB)
 	$(AR) -rs $(NAME) $(OBJB)
