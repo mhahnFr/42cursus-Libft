@@ -1,4 +1,4 @@
-# Welcome to the Libft!
+# Welcome to 42cursus-Libft!
 This library is the result of the very first project at the 42school. The task
 is to recode some functions of the libc library as well as some other utility
 functions. The subject of the additional bonus part is to create some utility
