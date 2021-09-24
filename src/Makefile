@@ -70,6 +70,7 @@ OBJM	=	$(patsubst %.c,%.o,$(SRC))
 OBJB	=	$(patsubst %.c,%.o,$(BONBON))
 
 # Compiles the library including the bonus part.
+.phony: all
 all: $(NAME) bonus
 
 # Compiles the mandatory part of the library.
@@ -92,6 +93,7 @@ fclean: clean
 	- $(RM) $(NAME)
 
 # Removes all files and recompiles the library.
+.phony: re
 re: fclean all
 
 # Creates a dynamic library.
@@ -100,5 +102,7 @@ so:
 	gcc -shared -o libft.so $(OBJ)
 
 # Compiles and adds the bonus part to the library.
+.phony: bonus
 bonus: $(NAME) $(OBJB)
 	$(AR) -rs $(NAME) $(OBJB)
+
