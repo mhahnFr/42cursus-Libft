@@ -61,7 +61,7 @@ BONBON	=	ft_lstnew.c \
 			ft_lstmap.c
 
 # The flags to compile the C files with.
-CFLAGS	=	-Wall -Werror -Wextra
+CFLAGS	=	-Wall -Werror -Wextra -Ofast
 
 # The object files for the mandatory part.
 OBJM	=	$(patsubst %.c,%.o,$(SRC))
