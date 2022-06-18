@@ -21,7 +21,7 @@ Some other utility functions might be appended later on.
 > with the [norm]:  
 > - Only 25 lines per function,
 > - only 5 functions per file,
-> - usage of only the allowed exteernal functions.
+> - usage of only the allowed external functions.
 
 © 2021 [mhahnFr](https://www.github.com/mhahnFr)
 
